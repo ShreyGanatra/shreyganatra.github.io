@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Blog | Shrey Ganatra</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">SHREY GANATRA</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li ><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Projects</a></li>
+							<li  class="active"><a href="blog.html">Blogs</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/TheGreatSVG" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/shrey_ganatra/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/ShreyGanatra" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+					
+							<header class="major">
+								<h3 style='font-size: 24px;' class="date">Blog</h3>
+								<section style="text-align: left;"><h3>Neural Networks in Robotics</h3>
+                                    <b>Shrey Ganatra</b><br/><br/><br/>
+                                    
+                                    
+                                    In recent years, the research of neural networks (NN) has attracted great attention. It is well known that, mammals’ brain, which consists of billions of interconnected neurons, has the ability to deal with complex and computationally demanding tasks, such as face recognition, body motion planning, and muscle activities control. <br/>
+                                    
+                                    Robots are basically a human clone, and so all these qualities need to be programmed in a robot. Thus, using Neural Network can bring big changes in the performance of a robot.Also, emerging topics like deep learning, big data, and cloud computing, may be incorporated into the neural network control for complex systems; for example, deep neural networks could be used to process massive amounts of unsupervised data in complex scenarios, neural networks can be helpful in reducing the data dimensionality, and the optimization of NN training may be employed to enhance the learning and adaptation performance of robots.<br/>
+                                    
+                                    In this article, we would study some of the very important and basic applications of neural networks in robotics.<br/>
+                                    
+                                    <b>What is Neural Network?</b><br/>
+                                    A neural network is a series of algorithms that works to recognize underlying relationships in a set of data through a process that mimics the way the human brain operates. In this sense, neural networks refer to systems of neurons, either organic or artificial in nature. Neural networks can adapt to changing input; so the network generates the best possible result without needing to redesign the output criteria.<br/>
+                                    
+                                    <b>How does a Neural Network work?</b><br/>
+                                    Neural Networks take in data, train themselves to recognize the patterns in the data and then predict the outputs for a new set of similar data. To read a detailed explanation of neural networks, its structure and how the structure works, refer the link.
+                                    Some of the basic neural networks are as follows:<br/>
+                                    
+                                    <img src='images/NN.jpg' style="height: auto; width: auto;"/><br/>
+                                    
+                                    
+                                    <b>How Robotics and AI are connected?</b><br/>
+                                    There are three different types of robotic programs: remote control, artificial intelligence and hybrid.<br/>
+                                     A robot with remote control programming has a preexisting set of commands that it will only perform if and when it receives a signal from a control source, typically a human being with a remote control. It is perhaps more appropriate to view devices controlled primarily by human commands as falling in the discipline of automation rather than robotics. 
+                                    Robots that use artificial intelligence interact with their environment on their own without a control source, and can determine reactions to objects and problems they encounter using their preexisting programming.<br/>
+                                     Hybrid is a form of programming that incorporates both AI and RC functions in them.<br/>
+                                     
+                                    <b>Application of NN in Robotics</b><br/>
+                                     The basic necessity of a robot is to have a proper dynamics for its movement
+                                    and to process what comes in its way while its movement. So, we will see how a Neural Network helps to improve these two main problems faced to build a better robot.<br/>
+                                    
+                                    <b>1)Predict Robot Dynamics</b><br/>
+                                    
+                                    End-effector performance in industrial robots suffers from the undesired discrepancy between the expected output and the actual system output, known as the model following error. Usually, the complete dynamics to define this discrepancy cannot be modeled accurately due to its complexity and uncertainty. Thus,it is hard to compensate for it by standard model based feedforward control or model based adaptive control techniques. If the robot is to execute repetitive tasks, and the robot repeatability is good, the error information from past iterations/periods can be utilized to reduce the error for the next iteration/period using the learning control techniques, such as iterative learning control (ILC) [1] and repetitive control [2]. For new trajectories, however, the learned knowledge cannot be directly applied and the system has to go through the learning process again to regain its performance, which is undesired in industrial applications.<br/>
+                                    
+                                    In industrial applications, this means the production line has to stop for learning, and the overall productivity of the process is compromised. To solve this problem, this paper proposes a learning control scheme based on neural network (NN) prediction. Learning/training is performed for the neural networks for a set of trajectories in advance. Then the feedforward compensation torque for any trajectory in the set can be calculated according to the predicted error from multiple neural networks managed with expert logic.<br/>
+                                    
+                                    
+                                    
+                                    <b>2)To help Robots navigate.</b><br/>
+                                    To begin with, the robots start by sensing the world with radars, a multitude of cameras and ultrasonics.However, the challenge is that most of this knowledge is low-level and non-semantic. For example, a robot may sense that an object is ten meters away, yet without knowing the object category, it’s difficult to make safe driving decisions.<br/>
+                                    Machine learning through neural networks is surprisingly useful in converting this unstructured low-level data into higher level information.To understand the surrounding environment in real time, a central component to the robot is an object detection module - a program that inputs images and returns a list of object boxes.<br/>
+                                    In the robot software, we have a set of trainable units, mostly neural networks, where the code is written by the model itself. The program is represented by a set of weights.At first, these numbers are randomly initialized, and the program’s output is random as well. The engineers present the model examples of what they would like to predict and ask the network to get better the next time it sees a similar input. By iteratively changing the weights, the optimization algorithm searches for programs that predict bounding boxes more and more accurately.<br/>
+                                    But, some of the obstacles faced by the object detection modules are as follows:<br/>
+                                    Should the model be penalized or rewarded when it detects a car in a window reflection?<br/>
+                                    What shall it do when it detects a picture of a human from a poster?<br/>
+                                    Should a car trailer full of cars be annotated as one entity or each of the cars be separately annotated?<br/>
+                                </section>
+							</header>
+							
+								
+								
+						
+								
+
+					</div>
+
+				
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Shrey Ganatra | 2021</li>
+						<!-- <li>Design: <a href="https://html5up.net">HTML5 UP</a></li> -->
+					</ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
