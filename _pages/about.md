@@ -24,5 +24,5 @@ table, td, th {
    border: none;
 }
 </style>
-**Nov 2025** | Our work on Hallucination accepted at EMNLP 2025 (Industry Track)
+**Nov 2025** | Our work on Hallucination ([HalluDetect](/publication/halludetect)) accepted at EMNLP 2025 (Industry Track)
 **Jul 2025** | Joined Microsoft Research, India as Research Fellow
