@@ -1,10 +1,10 @@
 ---
 title: "HalluDetect: Detecting, Mitigating, and Benchmarking Hallucinations in Conversational Systems in the Legal Domain"
 collection: publications
-ispaper: "yes"
-permalink: 
+category: conferences
+permalink: /publication/halludetect
 excerpt: ''
-date: 2025-11-11
+date: 2025-11
 venue: 'Published at EMNLP 2025 (Industry Track)'
 slidesurl: ''
 paperurl: 'https://aclanthology.org/2025.emnlp-industry.128.pdf'
