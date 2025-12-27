@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/halludetect
 excerpt: ''
-date: 2025-11
+date: 2025-11-01
 venue: 'Published at EMNLP 2025 (Industry Track)'
 slidesurl: ''
 paperurl: 'https://aclanthology.org/2025.emnlp-industry.128.pdf'
